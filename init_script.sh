@@ -49,3 +49,16 @@ run: all
 	@echo "Running program..."
 	@./$(BIN_DIR)/$(TARGET)
 EOF
+
+git init
+touch .gitignore
+
+cat << 'EOF' > .gitignore
+bin/
+obj/
+.cache/
+compile_commands.json
+
+EOF
+
+bear -- make

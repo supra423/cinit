@@ -3,3 +3,5 @@ in the command line and already have a working project directory for my C progra
 
 This basically just adds an "include" and "src" directory and a "main.c" inside the src
 along with a simple makefile template
+
+then just "chmod +x init_script.sh" to make it executable and put it inside /usr/bin/ to make it global or smth
