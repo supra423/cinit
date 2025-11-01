@@ -22,7 +22,7 @@ OBJ_DIR = obj
 BIN_DIR = bin
 
 CC = gcc
-CFLAGS = -Wall -Wextra -g
+CFLAGS = -Iinclude -Wall -Wextra -g
 # CFLAGS = -Wall -Wextra -O3
 
 SRCS = $(wildcard $(SRC_DIR)/*.c)
