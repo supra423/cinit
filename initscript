@@ -24,7 +24,7 @@ BIN_DIR = bin
 CC = gcc
 CFLAGS = -Iinclude -Wall -Wextra -g
 LDFLAGS = -fsanitize=address -fsanitize=leak
-# CFLAGS = -Iinclude -Wall -Wextra -O3
+# CFLAGS = -Iinclude -Wall -Wextra -O2
 
 SRCS = $(wildcard $(SRC_DIR)/*.c)
 OBJS = $(patsubst $(SRC_DIR)/%.c, $(OBJ_DIR)/%.o, $(SRCS))
