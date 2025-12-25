@@ -28,7 +28,7 @@ LDFLAGS := -fsanitize=address -fsanitize=leak
 #		  -fno-plt -pipe -mtune=native
 
 # PKG_CFLAGS := $(shell pkg-config --cflags libfoo)
-# PKG_CFLAGS := $(shell pkg-config --libs libfoo)
+# PKG_LIBS := $(shell pkg-config --libs libfoo)
 
 SRCS := $(wildcard $(SRC_DIR)/*.c)
 OBJS := $(patsubst $(SRC_DIR)/%.c, $(OBJ_DIR)/%.o, $(SRCS))
