@@ -16,18 +16,22 @@ EOF
 touch makefile
 
 cat << 'EOF' > makefile
-TARGET = main
-SRC_DIR = src
-OBJ_DIR = obj
-BIN_DIR = bin
+TARGET := main
+SRC_DIR := src
+OBJ_DIR := obj
+BIN_DIR := bin
 
-CC = gcc
-CFLAGS = -Iinclude -Wall -Wextra -g
-LDFLAGS = -fsanitize=address -fsanitize=leak
-# CFLAGS = -Iinclude -Wall -Wextra -O2
+CC := gcc
+CFLAGS := -Iinclude -Wall -Wextra -g
+LDFLAGS := -fsanitize=address -fsanitize=leak
+# CFLAGS := -march=native -Iinclude -Wall -Wextra -O2 -fomit-frame-pointer \
+#		  -fno-plt -pipe -mtune=native
 
-SRCS = $(wildcard $(SRC_DIR)/*.c)
-OBJS = $(patsubst $(SRC_DIR)/%.c, $(OBJ_DIR)/%.o, $(SRCS))
+# PKG_CFLAGS := $(shell pkg-config --cflags libfoo)
+# PKG_CFLAGS := $(shell pkg-config --libs libfoo)
+
+SRCS := $(wildcard $(SRC_DIR)/*.c)
+OBJS := $(patsubst $(SRC_DIR)/%.c, $(OBJ_DIR)/%.o, $(SRCS))
 
 all: $(BIN_DIR)/$(TARGET)
 
