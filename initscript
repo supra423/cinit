@@ -23,7 +23,7 @@ BIN_DIR := bin
 
 CC := gcc
 CFLAGS := -Iinclude -Wall -Wextra -g
-LDFLAGS := -fsanitize=address -fsanitize=leak
+LDFLAGS :=
 # CFLAGS := -march=native -Iinclude -Wall -Wextra -O2 -fomit-frame-pointer \
 #		  -fno-plt -pipe -mtune=native
 
