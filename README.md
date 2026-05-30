@@ -56,5 +56,3 @@ you will need to modify the makefile accordingly.
     * and a makefile for automation of the build process.
 - This script is NOT meant to be used for production projects, but rather as a starting
 point for small projects or for learning purposes. I personally made this script just for ME.
-
-
