@@ -35,7 +35,7 @@ BIN_DIR_DEBUG := bin/debug
 BIN_DIR_RELEASE := bin/release
 BIN_DIR_MAX := bin/max
 
-# compiler gcc clang
+# compiler gcc clang g++
 CC := gcc
 
 # flags
