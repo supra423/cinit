@@ -1,5 +1,5 @@
 # Introduction
-This is just a very small script I made to help me with other C/C++ projects.
+`cinit` (pronounced "sinit") is just a very small script I made to help me with other C/C++ projects.
 It is a simple script that will initialize a new C/C++ project within the current directory
 that includes a basic structure and a makefile.
 
