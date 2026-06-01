@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-if [ "$1" == "c" ]; then
+if [ "$1" = "c" ]; then
 	CC="gcc"
 	EXTENSION="c"
 	mkdir include
@@ -15,7 +15,7 @@ if [ "$1" == "c" ]; then
 		return 0;
 	}
 EOF
-elif [ "$1" == "cpp" ]; then
+elif [ "$1" = "cpp" ]; then
 	CC="g++"
 	EXTENSION="cpp"
 	mkdir include
