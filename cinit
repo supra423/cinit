@@ -7,13 +7,13 @@ if [ "$1" = "c" ]; then
 	mkdir src
 	touch src/main.c
 	cat << 'EOF' > src/main.c
-	#include <stdio.h>
+#include <stdio.h>
 
-	int main() {
+int main() {
 
-		printf("Hello, World!\n");
-		return 0;
-	}
+	printf("Hello, World!\n");
+	return 0;
+}
 EOF
 elif [ "$1" = "cpp" ]; then
 	CC="g++"
@@ -22,13 +22,13 @@ elif [ "$1" = "cpp" ]; then
 	mkdir src
 	touch src/main.cpp
 	cat << 'EOF' > src/main.cpp
-	#include <iostream>
+#include <iostream>
 
-	int main() {
+int main() {
 
-		std::cout << "Hello, World!" << std::endl;
-		return 0;
-	}
+	std::cout << "Hello, World!" << std::endl;
+	return 0;
+}
 EOF
 else 
 	echo "Use 'c' or 'cpp' as a command-line argument to initialize a C or C++ project, respectively."
